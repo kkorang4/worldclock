@@ -1,11 +1,13 @@
 @font-face {
-    font-family: WorldClockFont;
-	src: url('digital_clock.ttf');
+    font-family: 'ClockFont';
+    src: url('clockfont.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
     display: flex;
-    justify-content: center; /* Center horizontally */
+    justify-content: space-evenly; /* Center horizontally */
     align-items: center; /* Center vertically */
     height: 100vh;
     margin: 0; /* Remove default margins */
@@ -30,12 +32,12 @@ body {
 
 .clock {
     position: relative;
-    width: 32%; /* Dynamic width */
+    width: 32vw; /* Dynamic width */
     height: 18vw; /* Dynamic height */
-    max-width: 33%; /* Optional: Max width for large screens */
+    max-width: 33vw; /* Optional: Max width for large screens */
     box-sizing: border-box;
 	border-radius: 2vw;
-    border: 0.5vw solid #440099; /* Use vw for border size */
+    border: 0.3vw solid #440099; /* Use vw for border size */
     text-align: center;
     padding: 2vw; /* Use vw for padding */
 }
@@ -45,26 +47,30 @@ body {
     width: 40vw; /* Dynamic width */
     height: 19.2vw; /* Dynamic height */
     box-sizing: border-box;
-    border: 1vw #C8102E; /* #C8102E, #32CD32, #ff4f00 */
+    border: 0.9vw #C8102E; /* #C8102E, #32CD32, #ff4f00 */
 	border-style: outset;
 	border-radius: 2vw;
 	margin-left: 30%;
 	margin-right: 30%;
     text-align: center;
-	padding-top: 1.4vw;
+	padding-top: 1.4%;
 }
 
 .auckland .time{
-	font-size: 11vw;
+	font-size: 13vw;
+}
+
+.auckland .weekday{
+	margin-bottom: -3.5vw;
 }
 
 .weekday {
-	font-family: sans-serif;
+	font-family: 'ClockFont', sans-serif;
     font-weight: normal; /* Adjust weight as needed */
     font-size: 2vw; /* Adjust size dynamically */
 	text-transform: uppercase;
     color: #C5B4E3; /* Match color to theme */
-	margin-bottom: 0vw;
+	margin-bottom: -2.5vw;
 }
 
 .weekday-daytime {
@@ -76,16 +82,16 @@ body {
 }
 
 h2 {
-    margin-top: -1.2vw;
-    font-size: 3vw; /* Use vw for font size */
+    margin-top: -1.2%;
+    font-size: 4vw; /* Use vw for font size */
     color: white;
-    font-family: sans-serif;
-	margin-bottom: -1vw;
+    font-family: 'ClockFont', sans-serif;
+	margin-bottom: -5%;
 }
 
 .time {
-    font-family: WorldClockFont, sans-serif;
-    font-size: 9vw; /* Use vw for dynamic font size */
+	font-family: 'ClockFont', sans-serif;
+    font-size: 10vw; /* Use vw for dynamic font size */
     transform: scaleY(0.90);
     letter-spacing: -0.3vw; /* Use vw for letter spacing */
 }
