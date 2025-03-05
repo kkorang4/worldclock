@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Digital Display';
-    src: local('Digital Display'), url('../worldclock/digital_clock.ttf') format('truetype');
+    src: url('https://www.fontrepo.com/font/9495/technology.ttf') format('truetype');
     /* Add more formats if necessary */
 }
 /* 
@@ -20,7 +20,6 @@ body {
     align-items: center; /* Center vertically */
     height: 100vh;
     margin: 0; /* Remove default margins */
-    font-family: 'AirNewzald', sans-serif;  
     background-color: black;
     color: #C5B4E3;
 	overflow: hidden;
@@ -67,11 +66,11 @@ body {
 }
 
 .auckland .time{
-	font-size: 15.5vw;
+	font-size: 16vw;
 }
 
 .weekday {
-	font-family: 'AirNewzald Black', sans-serif; 
+	font-family: sans-serif;
     font-weight: normal; /* Adjust weight as needed */
     font-size: 2vw; /* Adjust size dynamically */
 	text-transform: uppercase;
@@ -89,15 +88,15 @@ body {
 
 h2 {
     margin-top: -1.2vw;
-    font-size: 3.5vw; /* Use vw for font size */
+    font-size: 3vw; /* Use vw for font size */
     color: white;
-    font-family: 'AirNewzald Black', sans-serif;
+    font-family: sans-serif;
 	margin-bottom: -1vw;
 }
 
 .time {
     font-size: 13vw; /* Use vw for dynamic font size */
-    font-family: 'Digital Display', sans-serif;
+    font-family: Digital Display, sans-serif;
     transform: scaleY(0.90);
     letter-spacing: -0.3vw; /* Use vw for letter spacing */
 }
@@ -119,9 +118,8 @@ h2 {
     color: black;
 }
 
-
 /* remove keyframes blink and .blink in action if need to remove blinking */
-@keyframes blink {
+/*@keyframes blink {
     0% { opacity: 1; }
     50% { opacity: 0; }
     100% { opacity: 1; }
@@ -129,4 +127,4 @@ h2 {
 
 .blink {
     animation: blink 1s step-end infinite;
-}
+}*/
