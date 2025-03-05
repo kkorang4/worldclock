@@ -1,17 +1,7 @@
 @font-face {
-    font-family: 'Digital Display';
-    /* Add more formats if necessary */
+    font-family: WorldClockFont;
+	src: url('digital_clock.ttf');
 }
-/* 
-AirNZ Colours
-#000000 - Black
-#FFFFFF - White
-#221551 - Black Violet
-#440099 - Primary Violet
-#C5B4E3 - Soft Violet
-#00B0B9 - Teal
-#008392 - Teal (Accesible for Digital)
-*/
 
 body {
     display: flex;
@@ -25,7 +15,7 @@ body {
 }
 
 .region {
-    padding-top: 10px;
+    padding-top: 1vw;
     display: flex; /* Use flexbox for layout */
     flex-direction: column; /* Stack time and date vertically */
     align-items: center; /* Center align items horizontally */
@@ -65,7 +55,7 @@ body {
 }
 
 .auckland .time{
-	font-size: 12vw;
+	font-size: 11vw;
 }
 
 .weekday {
@@ -94,8 +84,8 @@ h2 {
 }
 
 .time {
-    font-size: 10vw; /* Use vw for dynamic font size */
-    font-family: sans-serif;
+    font-family: WorldClockFont, sans-serif;
+    font-size: 9vw; /* Use vw for dynamic font size */
     transform: scaleY(0.90);
     letter-spacing: -0.3vw; /* Use vw for letter spacing */
 }
@@ -118,7 +108,7 @@ h2 {
 }
 
 /* remove keyframes blink and .blink in action if need to remove blinking */
-@keyframes blink {
+/*@keyframes blink {
     0% { opacity: 1; }
     50% { opacity: 0; }
     100% { opacity: 1; }
@@ -126,4 +116,4 @@ h2 {
 
 .blink {
     animation: blink 1s step-end infinite;
-}
+}*/
