@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'Digital Display';
+    src: local('Digital Display'), url('../cmetic.github.io/digital_clock.ttf') format('truetype');
+    /* Add more formats if necessary */
+}
+/* 
+AirNZ Colours
+#000000 - Black
+#FFFFFF - White
+#221551 - Black Violet
+#440099 - Primary Violet
+#C5B4E3 - Soft Violet
+#00B0B9 - Teal
+#008392 - Teal (Accesible for Digital)
+*/
+
+body {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh;
+    margin: 0; /* Remove default margins */
+    font-family: 'AirNewzald', sans-serif;  
+    background-color: black;
+    color: #C5B4E3;
+	overflow: hidden;
+}
+
+.region {
+    padding-top: 10px;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack time and date vertically */
+    align-items: center; /* Center align items horizontally */
+}
+
+.clock-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center; /* Center clocks in container */
+    gap: 0.5vw; /* Add some space between clocks */
+}
+
+.clock {
+    position: relative;
+    width: 32%; /* Dynamic width */
+    height: 18vw; /* Dynamic height */
+    max-width: 33%; /* Optional: Max width for large screens */
+    box-sizing: border-box;
+	border-radius: 2vw;
+    border: 0.5vw solid #440099; /* Use vw for border size */
+    text-align: center;
+    padding: 2vw; /* Use vw for padding */
+}
+
+.auckland{
+	text-transform: uppercase;
+    width: 40vw; /* Dynamic width */
+    height: 19.2vw; /* Dynamic height */
+    box-sizing: border-box;
+    border: 1vw #C8102E; /* #C8102E, #32CD32, #ff4f00 */
+	border-style: outset;
+	border-radius: 2vw;
+	margin-left: 30%;
+	margin-right: 30%;
+    text-align: center;
+	padding-top: 1.4vw;
+}
+
+.auckland .time{
+	font-size: 15.5vw;
+}
+
+.weekday {
+	font-family: 'AirNewzald Black', sans-serif; 
+    font-weight: normal; /* Adjust weight as needed */
+    font-size: 2vw; /* Adjust size dynamically */
+	text-transform: uppercase;
+    color: #C5B4E3; /* Match color to theme */
+	margin-bottom: 0vw;
+}
+
+.weekday-daytime {
+	color: #C5B4E3; /* alt. #221551 #440099 */
+}
+
+.weekday-nighttime {
+	color: #BBE5E9;
+}
+
+h2 {
+    margin-top: -1.2vw;
+    font-size: 3.5vw; /* Use vw for font size */
+    color: white;
+    font-family: 'AirNewzald Black', sans-serif;
+	margin-bottom: -1vw;
+}
+
+.time {
+    font-size: 13vw; /* Use vw for dynamic font size */
+    font-family: 'Digital Display', sans-serif;
+    transform: scaleY(0.90);
+    letter-spacing: -0.3vw; /* Use vw for letter spacing */
+}
+
+.am-time {
+    color: #440099; /* Air NZ purple */
+}
+
+.pm-time {
+    color: #00B0B9; /* Air NZ Teal */
+}
+
+.daytime {
+    background-color: #FFFFF0; /* light beige */
+}
+
+/* , .daytime .date  */
+.daytime h2{
+    color: black;
+}
+
+
+/* remove keyframes blink and .blink in action if need to remove blinking */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.blink {
+    animation: blink 1s step-end infinite;
+}
