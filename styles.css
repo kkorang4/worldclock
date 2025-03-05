@@ -1,6 +1,5 @@
 @font-face {
     font-family: 'Digital Display';
-    src: sans-serif format('truetype');
     /* Add more formats if necessary */
 }
 /* 
@@ -66,7 +65,7 @@ body {
 }
 
 .auckland .time{
-	font-size: 16vw;
+	font-size: 12vw;
 }
 
 .weekday {
@@ -95,8 +94,8 @@ h2 {
 }
 
 .time {
-    font-size: 13vw; /* Use vw for dynamic font size */
-    font-family: Digital Display, sans-serif;
+    font-size: 10vw; /* Use vw for dynamic font size */
+    font-family: sans-serif;
     transform: scaleY(0.90);
     letter-spacing: -0.3vw; /* Use vw for letter spacing */
 }
