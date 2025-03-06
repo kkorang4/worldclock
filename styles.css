@@ -60,7 +60,7 @@ body {
 	margin-left: 30%;
 	margin-right: 30%;
     text-align: center;
-	padding-top: 1.4%;
+	padding-top: 2%;
 }
 
 .auckland .time{
@@ -77,7 +77,7 @@ body {
     font-size: 2vw; /* Adjust size dynamically */
 	text-transform: uppercase;
     color: #C5B4E3; /* Match color to theme */
-	margin-bottom: -1.5em;
+	margin-bottom: -1.1em;
 }
 
 .weekday-daytime {
@@ -119,3 +119,14 @@ h2 {
 .daytime h2{
     color: black;
 }
+
+/* remove keyframes blink and .blink in action if need to remove blinking */
+/*@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.blink {
+    animation: blink 1s step-end infinite;
+}*/
